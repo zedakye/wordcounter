@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Counted</h1>
+	<a href="{% url 'home' %}">Start Again</a>
+	<h2>Your Text</h2>
+	<p>{{text}}</p>
+	<h2>Total Words</h2>
+	<p>{{words}}</p>
+	<br>
+	<h2>Word Frequency</h2>
+	{% for key,value in dic%}
+	{{key}} = {{value}}
+	<br>
+	{% endfor %}
+
+</body>
+</html>
